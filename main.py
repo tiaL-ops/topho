@@ -102,6 +102,48 @@ def write_to_file(file_name, data):
     with open(file_name, 'wb') as file:
         file.write(data)
     print(f"File written: {file_name}")
+def process_folder_recursive(drive_service, access_token, folder_id, folder_name, skipped_videos):
+    print(f"Processing folder: {folder_name}")
+    media_files = list_media_files(drive_service, folder_id)
+    album_title = folder_name.split('/')[-1]
+
+    album_id = create_album(access_token,album_title)
+    if not album_id:
+        print(f" - Failed to create album: {folder_name}")
+        return
+
+    upload_tokens = []
+
+    for media in media_files:
+        print(f"  - Processing {media['name']}...")
+        file_bytes = download_file(drive_service, media['id'])
+        mime_type = media['mimeType']
+
+        if mime_type.startswith('video/'):
+            duration = get_video_duration_from_bytes(file_bytes)
+            if duration and duration > 300:
+                print(f"    ⚠️ Skipped {media['name']}: video too long ({duration:.1f} sec)")
+                skipped_videos.append((folder_name, media['name'], duration))
+                continue
+
+        token = upload_to_photos(access_token, file_bytes, media['name'])
+        if token:
+            upload_tokens.append(token)
+
+    if upload_tokens:
+        success = add_to_album(access_token, upload_tokens, album_id)
+        print(f"  - Added {len(upload_tokens)} media items to album: {folder_name}")
+    else:
+        print("  - No valid media uploaded.")
+
+    # Recurse into child folders
+    child_folders = list_child_folders(drive_service, folder_id)
+    for child in child_folders:
+        child_name = f"{folder_name}/{child['name']}"
+        process_folder_recursive(drive_service, access_token, child['id'], child_name, skipped_videos)
+
+
+
 
 def main():
     creds = authenticate()
@@ -109,49 +151,21 @@ def main():
     access_token = creds.token
     skipped_videos = []
 
-    parent_folder_name = 'testpic'
-    parent_id = get_folder_id(drive_service, 'root', parent_folder_name)
-    if not parent_id:
-        print("Parent folder not found.")
+    root_folder_name = '_pictest'
+    root_folder_id = get_folder_id(drive_service, 'root', root_folder_name)
+    if not root_folder_id:
+        print("Root folder not found.")
         return
 
-    child_folders = list_child_folders(drive_service, parent_id)
+    child_folders = list_child_folders(drive_service, root_folder_id)
     for folder in child_folders:
-        print(f"Processing folder: {folder['name']}")
-        media_files = list_media_files(drive_service, folder['id'])
+        process_folder_recursive(drive_service, access_token, folder['id'], folder['name'], skipped_videos)
 
-        if not media_files:
-            print(" - No media files found.")
-            continue
-
-        album_id = create_album(access_token, folder['name'])
-        if not album_id:
-            print(" - Failed to create album.")
-            continue
-
-        upload_tokens = []
-
-        for media in media_files:
-            print(f"  - Processing {media['name']}...")
-            file_bytes = download_file(drive_service, media['id'])
-            mime_type = media['mimeType']
-
-            if mime_type.startswith('video/'):
-                duration = get_video_duration_from_bytes(file_bytes)
-                if duration and duration > 300:  # 5 minutes
-                    print(f"    ⚠️ Skipped {media['name']}: video too long ({duration:.1f} sec)")
-                    skipped_videos.append((folder['name'], media['name'], duration))
-                    continue
-
-            token = upload_to_photos(access_token, file_bytes, media['name'])
-            if token:
-                upload_tokens.append(token)
-
-        if upload_tokens:
-            success = add_to_album(access_token, upload_tokens, album_id)
-            print(f"  - Added {len(upload_tokens)} media items to album: {folder['name']}")
-        else:
-            print("  - No valid media uploaded.")
+    if skipped_videos:
+        with open("missed_videos.txt", "w", encoding="utf-8") as f:
+            for folder_name, video_name, duration in skipped_videos:
+                f.write(f"{folder_name} - {video_name} (Duration: {duration:.1f} sec)\n")
+        print("⚠️ Skipped video log saved to missed_videos.txt")
 
     if skipped_videos:
         with open("missed_videos.txt", "w", encoding="utf-8") as f:
