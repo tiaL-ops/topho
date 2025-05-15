@@ -98,10 +98,16 @@ def get_video_duration_from_bytes(video_bytes):
         print("Error getting video duration:", e)
         return None
 
+def write_to_file(file_name, data):
+    with open(file_name, 'wb') as file:
+        file.write(data)
+    print(f"File written: {file_name}")
+
 def main():
     creds = authenticate()
     drive_service = build('drive', 'v3', credentials=creds)
     access_token = creds.token
+    skipped_videos = []
 
     parent_folder_name = 'testpic'
     parent_id = get_folder_id(drive_service, 'root', parent_folder_name)
@@ -134,6 +140,7 @@ def main():
                 duration = get_video_duration_from_bytes(file_bytes)
                 if duration and duration > 300:  # 5 minutes
                     print(f"    ⚠️ Skipped {media['name']}: video too long ({duration:.1f} sec)")
+                    skipped_videos.append((folder['name'], media['name'], duration))
                     continue
 
             token = upload_to_photos(access_token, file_bytes, media['name'])
@@ -145,6 +152,12 @@ def main():
             print(f"  - Added {len(upload_tokens)} media items to album: {folder['name']}")
         else:
             print("  - No valid media uploaded.")
+
+    if skipped_videos:
+        with open("missed_videos.txt", "w", encoding="utf-8") as f:
+            for folder_name, video_name, duration in skipped_videos:
+                f.write(f"{folder_name} - {video_name} (Duration: {duration:.1f} sec)\n")
+        print("⚠️ Skipped video log saved to missed_videos.txt")
 
 if __name__ == '__main__':
     main()
