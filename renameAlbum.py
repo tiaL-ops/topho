@@ -1,78 +1,99 @@
+#!/usr/bin/env python3
 import os
 import json
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
-# Scopes needed to read Google Photos albums
-SCOPES = ['https://www.googleapis.com/auth/photoslibrary.readonly']
+# Full access to your Photos library (required for delete & rename)
+SCOPES = ['https://www.googleapis.com/auth/photoslibrary']
 
-# Token & credentials files
-TOKEN_FILE = 'photos_token.json'
-CLIENT_SECRETS = 'credentials.json'
+
+TOKEN_PATH = 'token.json'
+CREDS_PATH = 'credentials.json'
 
 
 def authenticate():
-    """
-    Authenticate to Google Photos API, storing/reading token from TOKEN_FILE.
-    Uses console flow as fallback if run_local_server hangs.
-    """
     creds = None
-    if os.path.exists(TOKEN_FILE):
-        creds = Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
     else:
-        flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS, SCOPES)
-        try:
-            creds = flow.run_local_server(port=0)
-        except Exception:
-            print("Local server auth failed, falling back to console mode...")
-            creds = flow.run_console()
-        with open(TOKEN_FILE, 'w') as token:
+        flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+        creds = flow.run_local_server(port=0)
+        with open('token.json', 'w') as token:
             token.write(creds.to_json())
     return creds
 
-
-def clean_album_name(raw_name: str) -> str:
-    """
-    Given an album title possibly containing '/', return the text after the last slash.
-    """
-    return raw_name.rsplit('/', 1)[-1].strip()
-
-
-def list_clean_albums(service):
-    """
-    List all albums in the user's Google Photos library,
-    printing original and cleaned names.
-    """
+def list_all_albums(service):
     albums = []
-    next_page_token = None
+    next_token = None
     while True:
-        response = service.albums().list(
+        resp = service.albums().list(
             pageSize=50,
-            pageToken=next_page_token
+            pageToken=next_token,
+            fields='nextPageToken,albums(id,title,mediaItemsCount)'
         ).execute()
-        for a in response.get('albums', []):
-            raw = a.get('title', '')
-            clean = clean_album_name(raw)
-            albums.append({'id': a['id'], 'original': raw, 'cleaned': clean})
-            print(f"Album ID: {a['id']}")
-            print(f"  Original: {raw}")
-            print(f"  Cleaned:  {clean}\n")
-        next_page_token = response.get('nextPageToken')
-        if not next_page_token:
+        albums.extend(resp.get('albums', []))
+        next_token = resp.get('nextPageToken')
+        if not next_token:
             break
     return albums
 
 
+def delete_album(service, album_id, title):
+    try:
+        service.albums().delete(albumId=album_id).execute()
+        print(f"🗑  Deleted empty album: '{title}'")
+    except Exception as e:
+        print(f"❌ Failed to delete '{title}': {e}")
+
+
+def rename_album(service, album_id, old_title, new_title):
+    try:
+        body = {
+            'album': {'title': new_title},
+            'updateMask': 'title'
+        }
+        service.albums().patch(albumId=album_id, body=body).execute()
+        print(f"✏️  Renamed album: '{old_title}' → '{new_title}'")
+    except Exception as e:
+        print(f"❌ Failed to rename '{old_title}': {e}")
+
+
 def main():
+    
     creds = authenticate()
-    # Use explicit discovery URL to avoid UnknownApiNameOrVersion
-    photos_service = build(
-        'photoslibrary', 'v1',
-        credentials=creds,
+    print("🔐 Granted scopes:")
+    print(creds.scopes)   
+
+    # ← here’s the only change:
+    service = build(
+        'photoslibrary', 'v1', credentials=creds,
         discoveryServiceUrl='https://photoslibrary.googleapis.com/$discovery/rest?version=v1'
     )
-    list_clean_albums(photos_service)
+
+    print("🔍 Fetching all albums...")
+    albums = list_all_albums(service)
+    print(f"Found {len(albums)} albums.\n")
+
+    for album in albums:
+        album_id = album['id']
+        title = album.get('title', '')
+        # mediaItemsCount comes back as a string, default to zero if missing
+        count = int(album.get('mediaItemsCount', '0'))
+
+        # 1) Delete empty albums
+        if count == 0:
+            delete_album(service, album_id, title)
+            continue
+
+        # 2) Rename if title contains "/"
+        if '/' in title:
+            new_title = title.split('/')[-1].strip()
+            if new_title and new_title != title:
+                rename_album(service, album_id, title, new_title)
+
+    print("\n✅ Done.")
 
 
 if __name__ == '__main__':

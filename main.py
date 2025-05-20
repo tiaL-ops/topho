@@ -16,7 +16,7 @@ SCOPES = [
 
 # Supported extensions & video duration threshold
 IMAGE_EXTS = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.heic', '.dng'}
-VIDEO_EXTS = {'.mp4', '.mov', '.avi', '.mkv','.wav'}
+VIDEO_EXTS = {'.mp4', '.mov', '.avi', '.mkv','wav'}
 MAX_VIDEO_SECONDS = 900
 
 # Tracking files
@@ -98,44 +98,12 @@ def upload_to_photos(token, file_bytes, file_name):
 
 def create_album(token, title):
     headers = {"Authorization": f"Bearer {token}"}
-
-    # Step 1: List existing albums to check for the same title
-    albums = []
-    next_page_token = None
-    while True:
-        resp = requests.get(
-            "https://photoslibrary.googleapis.com/v1/albums",
-            headers=headers,
-            params={"pageSize": 50, "pageToken": next_page_token}
-        )
-        if resp.status_code != 200:
-            print(f"⚠️ Failed to list albums: {resp.text}")
-            break
-
-        data = resp.json()
-        albums.extend(data.get("albums", []))
-        next_page_token = data.get("nextPageToken")
-        if not next_page_token:
-            break
-
-    for album in albums:
-        if album.get("title") == title:
-            print(f"🔁 Album '{title}' already exists.")
-            return album.get("id")
-
-    # Step 2: If not found, create the album
-    print(f"➕ Creating new album '{title}'")
     resp = requests.post(
         "https://photoslibrary.googleapis.com/v1/albums",
         headers=headers,
         json={"album": {"title": title}}
     )
-    if resp.status_code == 200:
-        return resp.json().get("id")
-    else:
-        print(f"⚠️ Could not create album '{title}': {resp.text}")
-        return None
-
+    return resp.json().get('id') if resp.status_code == 200 else None
 
 
 def add_to_album(token, upload_tokens, album_id):
@@ -252,7 +220,7 @@ def main():
     imported = set(load_json(IMPORTED_FILE, []))
     skipped = load_json(SKIPPED_FILE, {})
 
-    root_name = '_Pictures and Video'
+    root_name = 'picvid'
     resp = drive_service.files().list(
         q=(f"mimeType='application/vnd.google-apps.folder' and"
            f" name='{root_name}' and 'root' in parents"),
