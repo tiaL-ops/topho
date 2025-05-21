@@ -17,7 +17,7 @@ SCOPES = [
 # Supported extensions & video duration threshold
 IMAGE_EXTS = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.heic', '.dng'}
 VIDEO_EXTS = {'.mp4', '.mov', '.avi', '.mkv','wav'}
-MAX_VIDEO_SECONDS = 900
+MAX_VIDEO_SECONDS = 1800
 
 # Tracking files
 IMPORTED_FILE = 'imported.json'
@@ -245,7 +245,7 @@ def process_folder(drive_service, token, folder_id, folder_name, imported, skipp
         for i in range(0, len(upload_tokens), chunk_size):
             batch = upload_tokens[i:i+chunk_size]
             try:
-                add_to_album(token, upload_tokens, album_id)
+                add_to_album(token, batch, album_id)
                 print(f"  🎉 Added {len(upload_tokens)} items to album '{folder_name}'")
             except Exception as e:
                 print(f"  ❌ Failed to add items to album '{folder_name}': {e}")
@@ -314,15 +314,8 @@ def main():
     creds = authenticate()
     drive_service = build('drive', 'v3', credentials=creds)
     token = creds.token
-    folder_id = '1abTmYKAkv-7SQ6iRUKvc8X0aGK-oRIQe'
-
-    # this both prints your mapping and removes those entries from imported.json
-    print(
-        export_and_clear_imported_for_folder(drive_service, folder_id)
-    )
     
    
-    """
    
     imported = set(load_json(IMPORTED_FILE, []))
     skipped = load_json(SKIPPED_FILE, {})
@@ -347,7 +340,6 @@ def main():
     for f in children:
         process_folder(drive_service, token, f['id'], f['name'], imported, skipped)
 
- """
- 
+
 if __name__ == '__main__':
     main()
