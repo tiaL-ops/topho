@@ -93,7 +93,15 @@ def upload_to_photos(token, file_bytes, file_name):
         headers=headers,
         data=file_bytes
     )
-    return resp.text if resp.status_code == 200 else None
+    if resp.status_code == 200:
+        return resp.text
+    # extract error message if possible
+    try:
+        err = resp.json().get('error', {})
+        msg = err.get('message', resp.text)
+    except ValueError:
+        msg = resp.text
+    raise RuntimeError(f"Upload failed ({resp.status_code}): {msg}")
 
 
 def create_album(token, title):
@@ -104,6 +112,31 @@ def create_album(token, title):
         json={"album": {"title": title}}
     )
     return resp.json().get('id') if resp.status_code == 200 else None
+
+
+def get_album_id(token, title):
+    """Return existing app-created album ID by title, or None."""
+    headers = {"Authorization": f"Bearer {token}"}
+    next_page = None
+    while True:
+        params = {"pageSize": 50}
+        if next_page:
+            params["pageToken"] = next_page
+        resp = requests.get(
+            "https://photoslibrary.googleapis.com/v1/albums",
+            headers=headers,
+            params=params
+        )
+        if resp.status_code != 200:
+            return None
+        data = resp.json()
+        for alb in data.get("albums", []):
+            if alb.get("title") == title:
+                return alb.get("id")
+        next_page = data.get("nextPageToken")
+        if not next_page:
+            break
+    return None
 
 
 def add_to_album(token, upload_tokens, album_id):
@@ -117,7 +150,15 @@ def add_to_album(token, upload_tokens, album_id):
         headers=headers,
         json=body
     )
-    return resp.status_code == 200
+    if resp.status_code == 200:
+        return True
+    # extract error message
+    try:
+        err = resp.json().get('error', {})
+        msg = err.get('message', resp.text)
+    except ValueError:
+        msg = resp.text
+    raise RuntimeError(f"Add to album failed ({resp.status_code}): {msg}")
 
 
 def process_folder(drive_service, token, folder_id, folder_name, imported, skipped):
@@ -137,12 +178,6 @@ def process_folder(drive_service, token, folder_id, folder_name, imported, skipp
         else:
             print(f"  [Skip]   {name} (unsupported)")
             log_missing(folder_name, name, 'unsupported format')
-
-    album_id = create_album(token, folder_name)
-    if not album_id:
-        print(f"⚠️ Could not create album for '{folder_name}'")
-        log_missing(folder_name, '', 'album creation failed')
-        return
 
     upload_tokens = []
 
@@ -190,33 +225,105 @@ def process_folder(drive_service, token, folder_id, folder_name, imported, skipp
         try:
             data = download_file(drive_service, file_id)
             token_str = upload_to_photos(token, data, name)
-            if not token_str:
-                raise RuntimeError('upload failed')
-
             upload_tokens.append(token_str)
             imported.add(file_id)
             save_json(IMPORTED_FILE, list(imported))
             print(f"  ✅ Uploaded {name}")
         except Exception as e:
-            print(f"  ❌ Error {name}: {e}")
+            print(f"  ❌ Upload failed for {name}: {e}")
             log_missing(folder_name, name, str(e))
             skipped[file_id] = str(e)
             save_json(SKIPPED_FILE, skipped)
 
     if upload_tokens:
-        if add_to_album(token, upload_tokens, album_id):
-            print(f"  🎉 Added {len(upload_tokens)} items to album")
-        else:
-            print(f"  ❌ Failed to add items to album")
-            log_missing(folder_name, '', 'batchCreate failed')
+        album_id = get_album_id(token, folder_name) or create_album(token, folder_name)
+        if not album_id:
+            print(f"⚠️ Could not create or find album '{folder_name}'")
+            log_missing(folder_name, '', 'album creation/fetch failed')
+            return
+        chunk_size = 50
+        for i in range(0, len(upload_tokens), chunk_size):
+            batch = upload_tokens[i:i+chunk_size]
+            try:
+                add_to_album(token, upload_tokens, album_id)
+                print(f"  🎉 Added {len(upload_tokens)} items to album '{folder_name}'")
+            except Exception as e:
+                print(f"  ❌ Failed to add items to album '{folder_name}': {e}")
+                log_missing(folder_name, '', str(e))
     else:
-        print(f"  - No valid media uploaded.")
+        # don't create an album if there's nothing to upload
+        print(f"  - No valid media uploaded; skipping album creation.")
+def get_folder_items_id_json(drive_service, folder_id):
+    """
+    Returns a JSON string mapping each file’s name to its Drive ID
+    for all non‐folder items in the given folder.
+    """
+    items = list_all_items(drive_service, folder_id)
+    mapping = {
+        itm['name']: itm['id']
+        for itm in items
+        if itm['mimeType'] != 'application/vnd.google-apps.folder'
+    }
+    return json.dumps(mapping, indent=2)
+def export_and_clear_imported_for_folder(drive_service, folder_id):
+    """
+    1) Loads imported.json (either a list of IDs or a dict of {id:info})
+    2) Converts it to a dict if necessary, saving it back
+    3) Lists that Drive folder
+    4) Builds a {fileName: fileId} map for only those IDs in imported.json
+    5) Deletes those IDs from imported.json on disk
+    6) Returns the mapping as pretty JSON
+    """
+    # 1) load whatever is in imported.json
+    imported_raw = load_json(IMPORTED_FILE, None)
+    if imported_raw is None:
+        imported = {}
+    elif isinstance(imported_raw, list):
+        # convert old list-of-IDs into a dict
+        imported = {fid: {} for fid in imported_raw}
+        save_json(IMPORTED_FILE, imported)
+    elif isinstance(imported_raw, dict):
+        imported = imported_raw
+    else:
+        raise RuntimeError(f"{IMPORTED_FILE} has unexpected format")
+
+    # 2) list all items in the folder
+    items = list_all_items(drive_service, folder_id)
+
+    # 3) build mapping for those IDs that were imported
+    mapping = {}
+    to_remove = []
+    for itm in items:
+        fid = itm['id']
+        if itm['mimeType'] != 'application/vnd.google-apps.folder' and fid in imported:
+            mapping[itm['name']] = fid
+            to_remove.append(fid)
+
+    # 4) remove them from imported and save back
+    for fid in to_remove:
+        imported.pop(fid, None)
+    save_json(IMPORTED_FILE, imported)
+
+    # 5) return the JSON block
+    return json.dumps(mapping, indent=2)
+
+
 
 
 def main():
     creds = authenticate()
     drive_service = build('drive', 'v3', credentials=creds)
     token = creds.token
+    folder_id = '1abTmYKAkv-7SQ6iRUKvc8X0aGK-oRIQe'
+
+    # this both prints your mapping and removes those entries from imported.json
+    print(
+        export_and_clear_imported_for_folder(drive_service, folder_id)
+    )
+    
+   
+    """
+   
     imported = set(load_json(IMPORTED_FILE, []))
     skipped = load_json(SKIPPED_FILE, {})
 
@@ -240,5 +347,7 @@ def main():
     for f in children:
         process_folder(drive_service, token, f['id'], f['name'], imported, skipped)
 
+ """
+ 
 if __name__ == '__main__':
     main()
