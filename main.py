@@ -2,6 +2,7 @@ import os
 import io
 import json
 import requests
+import time 
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
@@ -10,9 +11,11 @@ from googleapiclient.http import MediaIoBaseDownload
 # Scopes for Drive (read-only) and Photos (append-only)
 SCOPES = [
     'https://www.googleapis.com/auth/drive.readonly',
+    'https://www.googleapis.com/auth/photoslibrary.edit.appcreateddata',
     'https://www.googleapis.com/auth/photoslibrary.appendonly',
     'https://www.googleapis.com/auth/photoslibrary.readonly.appcreateddata'
 ]
+
 
 # Supported extensions & video duration threshold
 IMAGE_EXTS = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.heic', '.dng'}
@@ -24,6 +27,46 @@ IMPORTED_FILE = 'imported.json'
 SKIPPED_FILE = 'skipped.json'
 MISSED_FILE = 'missedimages.txt'
 
+def rename_album(token, album_id, old_title, new_title):
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+    body = {
+        "title": new_title  # <– No nested 'album'
+    }
+    resp = requests.patch(
+        f"https://photoslibrary.googleapis.com/v1/albums/{album_id}?updateMask=title",
+        headers=headers,
+        json=body
+    )
+    if resp.status_code == 200:
+        print(f"✏️ Renamed album: '{old_title}' → '{new_title}'")
+    else:
+        print(f"❌ Failed to rename '{old_title}': {resp.text}")
+
+def list_all_albums(token):
+    headers = {"Authorization": f"Bearer {token}"}
+    albums = []
+    next_token = None
+
+    while True:
+        resp = requests.get(
+            "https://photoslibrary.googleapis.com/v1/albums",
+            headers=headers,
+            params={"pageSize": 50, "pageToken": next_token}
+        )
+        if resp.status_code != 200:
+            print(f"⚠️ Failed to list albums: {resp.text}")
+            break
+
+        data = resp.json()
+        albums.extend(data.get("albums", []))
+        next_token = data.get("nextPageToken")
+        if not next_token:
+            break
+
+    return albums
 
 def authenticate():
     creds = None
@@ -315,31 +358,15 @@ def main():
     drive_service = build('drive', 'v3', credentials=creds)
     token = creds.token
     
-   
-   
-    imported = set(load_json(IMPORTED_FILE, []))
-    skipped = load_json(SKIPPED_FILE, {})
-
-    root_name = 'picvid'
-    resp = drive_service.files().list(
-        q=(f"mimeType='application/vnd.google-apps.folder' and"
-           f" name='{root_name}' and 'root' in parents"),
-        fields="files(id,name)"
-    ).execute()
-    folders = resp.get('files', [])
-    if not folders:
-        print(f"Root folder '{root_name}' not found.")
-        return
-    root_id = folders[0]['id']
-
-    children = drive_service.files().list(
-        q=f"mimeType='application/vnd.google-apps.folder' and '{root_id}' in parents",
-        fields="files(id,name)"
-    ).execute().get('files', [])
-
-    for f in children:
-        process_folder(drive_service, token, f['id'], f['name'], imported, skipped)
-
-
+    print("\n🔍 Checking for albums to rename...")
+    albums = list_all_albums(token)
+    for album in albums:
+        title = album.get('title', '')
+        album_id = album.get('id')
+        if '/' in title:
+            new_title = title.split('/')[-1].strip()
+            if new_title and new_title != title:
+                rename_album(token, album_id, title, new_title)
+                time.sleep(2)
 if __name__ == '__main__':
     main()
