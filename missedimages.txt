@@ -484,3 +484,624 @@
   "message": "Payload must not be empty"
 }
 2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording_640x360.mp4 : video too long (6074.2s)
+2023-2024/'25 and '26 Fellows End of Year Presentations - GMT20240502-201417_Recording_avo_640x360.mp4 : video too long (6101.2s)
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording_640x360.mp4 : video too long (6448.7s)
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.m4a : video too long (6448.6s)
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190535.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1QB3oB2gMOVG-vehCCqjq-NDpZ-cWCSOS?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190430.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/19rycYKeuUJtfueHs1aMyRUgcaxGSv8r9?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190525.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1QOJQ28nNd-cTUX7cGec9CJMAFIRedBR5?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190605.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1ACokdjuHiHI-_Giz1T8WejwdoYGzUwVx?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190447.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1mGXYS8uIXK5NbaPR_qpC4n4FltnptTOm?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190612.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1tVVNBo19TjM9S9UndBF9z_5Mzy-DHhPi?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190736.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1bXYeUvNdqWrN3y0ikSki6Pjp-yWvHJju?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190905.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1SpkRgQ7G5MPMWRd61qWvd2Arcc1yrIyr?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190835.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/18it1DuNg80Hi7FVhkGBRdTgObxkevc2h?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190624.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1J6ObgDFKuwAqHRksC_Wiy2SX02iOTp2b?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190859.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1blY21hW_LlSqyGeFqq7WWAxIrsICMwZH?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190938.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/15O5OQrTbkZNLRD5zQJVYPBmtHFvXlDae?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190635.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/13_HW8thXStARMcaBPag1EgG-G4ymG-66?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190747.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1agGF2J-XHEf3T4-WN7gopvHHf-CxdJYO?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190847.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1ORX4HDSrP1iU9CYDgUFykYER20mw4UEM?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190655.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1fEpLx2nE2lB3ihqU1jrz-GoxUQdvVAX5?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191906.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1zGmDl43lt2fdba9i9psJs_MJSX8JhZL4?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191936.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1arKOK4ZwQK7W1yhZUa3woyXIfUkOavGq?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191144.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/14CXsIL91CSaUqssDrmYwWucMtKo2ukyT?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192033.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1wlMo5-Lgj6hsaT30yQ6uQcwCvTBfb3W5?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190949.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1tBikxNXVtZcchRgL7Q7Wet2Xwn6wuZUo?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191131.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/11MpSk1GMiLVxw1ea2M7Y9lZCt2-l8sxJ?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191112.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1cNS6hS2jvSYeVQom8jPMz9zS4tSxhARo?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191957.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1OmSJ2WCG0EJda7xcuOPCQ-xX9Do5wp58?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191051.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1n2h9thgx4ABKdm0r78G4bDfMSd-eabxa?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190956.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/101b_0ZRLRfKzRGHxAk0s2JNPWQ4LbuCu?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193410.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1DKr64Fgh7OKmtyZVgl3EaiOSIZI7byS4?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192038.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1dcZE1Ui7kLgxMubO9OYCKD4viZTLi4KK?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192048.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1bBkYy1XOWE2Tef2U_4Yprq4Az8aRKrkV?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193459.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1ma-bem9QSXlX89EkAJmmYv8rOTecg6NS?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193350.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1YCnr4o3AbIi_JOdcT3KN3ETOTsrEfEYb?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193951.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1qeeCkXqR4H_ql_CCZW26Uv_Z5_099fK0?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192224.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1AzeZWa6lI5OoI7C-iGBpE6Kk5ZqgPSIl?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193824.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1zieh-HcTYlt4jzV0RtmfSPNNS04fsHmX?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193328.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1eNggblNZ2-SSmbs0SvVp85EFI1BExIRF?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193429.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1PrskGbshPukj6no_Tz3bWa2vhanfbpI8?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195048.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1Kw4E9He2T7O5Bt9duw7OZo6JXMsFjfD6?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195207.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/109WongSPvcmNLwS5vVCN7feLxVdFJYr6?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194857.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/13pOM9yxFp2wQAwjvet88JVINjcmlZL5k?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195016.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1XFlogz04bCef9V0kvG5kyG4GNIjDXcxU?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195223.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1vIcU9Cz1HTvjFDcojPkRvAsx3bkj3EPh?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195213.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1XA2sxEuHuHqS6uWoGIXR0eOkB6LThH5H?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194850.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1GqDfDXSw3_ljKr8lahOfGfd_MO0OEi1J?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194424.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/12wA_6Mqi7n13Gr7f45J2mLm0qVqNhFYW?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195234.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/17-OTi_IhDiVmtqRtOL0eNLr2eYPdMt3H?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194756.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1SkyLQSYUZbEzz5_75O328-2m4ZRpRuWa?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/Solar Powered Workshop - IMG_2909.HEIC : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.3gp : Upload failed (401): {
+  "code": 16,
+  "message": "Authentication session is not defined."
+}
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - ZOOM0014.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - DSC_0003.MOV : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1h8Cju7fboMe2Yr0wXc2YvmKDvxXXAh5I?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2022 - 2023 - Event Outline for 22-23 Annual Report : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording.cc.vtt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_RecordingnewChat.txt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording_1920x1080.mp4 : video too long (9123.2s)
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording_gallery_1920x1080.mp4 : video too long (9123.2s)
+2022 - 2023/Sharad Sagar - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar/Adobe Premiere Pro Auto-Save - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar -  : Add to album failed (429): Quota exceeded for quota 'concurrent write request' of service 'photoslibrary.googleapis.com'.
+2022 - 2023/Video/Pix 2022-2023/Foundations of Real estate - PXL_20221013_230832661.TS.mp4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022 - 2023/Video/Pix 2022-2023/Foundations of Real estate - PXL_20221013_230931377.jpg : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022 - 2023/Video/Pix 2022-2023/Foundations of Real estate - PXL_20221013_230623828.TS.mp4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022 - 2023/Video/Pix 2022-2023/Foundations of Real estate - PXL_20221013_230508339.jpg : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022 - 2023/Video/Pix 2022-2023/Foundations of Real estate - PXL_20221013_230426318.jpg : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190535.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1QB3oB2gMOVG-vehCCqjq-NDpZ-cWCSOS?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190430.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/19rycYKeuUJtfueHs1aMyRUgcaxGSv8r9?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190525.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1QOJQ28nNd-cTUX7cGec9CJMAFIRedBR5?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190605.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1ACokdjuHiHI-_Giz1T8WejwdoYGzUwVx?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190447.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1mGXYS8uIXK5NbaPR_qpC4n4FltnptTOm?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190612.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1tVVNBo19TjM9S9UndBF9z_5Mzy-DHhPi?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190736.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1bXYeUvNdqWrN3y0ikSki6Pjp-yWvHJju?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190905.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1SpkRgQ7G5MPMWRd61qWvd2Arcc1yrIyr?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190835.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/18it1DuNg80Hi7FVhkGBRdTgObxkevc2h?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190624.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1J6ObgDFKuwAqHRksC_Wiy2SX02iOTp2b?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190859.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1blY21hW_LlSqyGeFqq7WWAxIrsICMwZH?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190938.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/15O5OQrTbkZNLRD5zQJVYPBmtHFvXlDae?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190635.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/13_HW8thXStARMcaBPag1EgG-G4ymG-66?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190747.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1agGF2J-XHEf3T4-WN7gopvHHf-CxdJYO?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190847.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1ORX4HDSrP1iU9CYDgUFykYER20mw4UEM?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190655.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1fEpLx2nE2lB3ihqU1jrz-GoxUQdvVAX5?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191906.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1zGmDl43lt2fdba9i9psJs_MJSX8JhZL4?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191936.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1arKOK4ZwQK7W1yhZUa3woyXIfUkOavGq?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191144.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/14CXsIL91CSaUqssDrmYwWucMtKo2ukyT?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192033.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1wlMo5-Lgj6hsaT30yQ6uQcwCvTBfb3W5?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190949.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1tBikxNXVtZcchRgL7Q7Wet2Xwn6wuZUo?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191131.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/11MpSk1GMiLVxw1ea2M7Y9lZCt2-l8sxJ?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191112.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1cNS6hS2jvSYeVQom8jPMz9zS4tSxhARo?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191957.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1OmSJ2WCG0EJda7xcuOPCQ-xX9Do5wp58?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191051.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1n2h9thgx4ABKdm0r78G4bDfMSd-eabxa?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190956.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/101b_0ZRLRfKzRGHxAk0s2JNPWQ4LbuCu?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193410.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1DKr64Fgh7OKmtyZVgl3EaiOSIZI7byS4?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192038.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1dcZE1Ui7kLgxMubO9OYCKD4viZTLi4KK?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192048.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1bBkYy1XOWE2Tef2U_4Yprq4Az8aRKrkV?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193459.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1ma-bem9QSXlX89EkAJmmYv8rOTecg6NS?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193350.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1YCnr4o3AbIi_JOdcT3KN3ETOTsrEfEYb?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193951.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1qeeCkXqR4H_ql_CCZW26Uv_Z5_099fK0?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192224.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1AzeZWa6lI5OoI7C-iGBpE6Kk5ZqgPSIl?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193824.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1zieh-HcTYlt4jzV0RtmfSPNNS04fsHmX?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193328.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1eNggblNZ2-SSmbs0SvVp85EFI1BExIRF?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193429.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1PrskGbshPukj6no_Tz3bWa2vhanfbpI8?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195048.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1Kw4E9He2T7O5Bt9duw7OZo6JXMsFjfD6?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195207.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/109WongSPvcmNLwS5vVCN7feLxVdFJYr6?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194857.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/13pOM9yxFp2wQAwjvet88JVINjcmlZL5k?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195016.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1XFlogz04bCef9V0kvG5kyG4GNIjDXcxU?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195223.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1vIcU9Cz1HTvjFDcojPkRvAsx3bkj3EPh?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195213.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1XA2sxEuHuHqS6uWoGIXR0eOkB6LThH5H?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194850.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1GqDfDXSw3_ljKr8lahOfGfd_MO0OEi1J?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194424.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/12wA_6Mqi7n13Gr7f45J2mLm0qVqNhFYW?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195234.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/17-OTi_IhDiVmtqRtOL0eNLr2eYPdMt3H?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194756.jpg : <HttpError 403 when requesting https://www.googleapis.com/drive/v3/files/1SkyLQSYUZbEzz5_75O328-2m4ZRpRuWa?alt=media returned "Only files with binary content can be downloaded. Use Export with Docs Editors files.". Details: "[{'message': 'Only files with binary content can be downloaded. Use Export with Docs Editors files.', 'domain': 'global', 'reason': 'fileNotDownloadable', 'location': 'alt', 'locationType': 'parameter'}]">
+2023-2024/Solar Powered Workshop - IMG_2909.HEIC : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - ZOOM0014.WAV : unsupported format
+2022 - 2023 - Event Outline for 22-23 Annual Report : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording.cc.vtt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_RecordingnewChat.txt : unsupported format
+2022 - 2023/Sharad Sagar - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar/Adobe Premiere Pro Auto-Save - S Sagar.prproj : unsupported format
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - ZOOM0014.WAV : unsupported format
+2022 - 2023 - Event Outline for 22-23 Annual Report : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording.cc.vtt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_RecordingnewChat.txt : unsupported format
+2022 - 2023/Sharad Sagar - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar/Adobe Premiere Pro Auto-Save - S Sagar.prproj : unsupported format
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190535.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190430.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190525.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190605.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190447.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190612.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190736.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190905.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190835.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190624.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190859.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190938.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190635.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190747.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190847.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190655.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191906.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191936.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191144.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192033.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190949.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191131.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191112.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191957.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191051.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190956.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193410.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192038.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192048.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193459.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193350.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193951.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192224.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193824.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193328.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193429.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195048.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195207.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194857.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195016.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195223.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195213.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194850.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194424.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195234.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194756.jpg : Don’t know how to export application/vnd.google-apps.shortcut
+2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - ZOOM0014.WAV : unsupported format
+2022 - 2023 - Event Outline for 22-23 Annual Report : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording.cc.vtt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_RecordingnewChat.txt : unsupported format
+2022 - 2023/Sharad Sagar - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar/Adobe Premiere Pro Auto-Save - S Sagar.prproj : unsupported format
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190535.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1QB3oB2gMOVG-vehCCqjq-NDpZ-cWCSOS?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190430.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/19rycYKeuUJtfueHs1aMyRUgcaxGSv8r9?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190525.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1QOJQ28nNd-cTUX7cGec9CJMAFIRedBR5?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190605.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1ACokdjuHiHI-_Giz1T8WejwdoYGzUwVx?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190447.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1mGXYS8uIXK5NbaPR_qpC4n4FltnptTOm?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190612.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1tVVNBo19TjM9S9UndBF9z_5Mzy-DHhPi?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190736.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1bXYeUvNdqWrN3y0ikSki6Pjp-yWvHJju?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190905.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1SpkRgQ7G5MPMWRd61qWvd2Arcc1yrIyr?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190835.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/18it1DuNg80Hi7FVhkGBRdTgObxkevc2h?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190624.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1J6ObgDFKuwAqHRksC_Wiy2SX02iOTp2b?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190859.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1blY21hW_LlSqyGeFqq7WWAxIrsICMwZH?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190938.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/15O5OQrTbkZNLRD5zQJVYPBmtHFvXlDae?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190635.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/13_HW8thXStARMcaBPag1EgG-G4ymG-66?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190747.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1agGF2J-XHEf3T4-WN7gopvHHf-CxdJYO?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190847.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1ORX4HDSrP1iU9CYDgUFykYER20mw4UEM?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190655.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1fEpLx2nE2lB3ihqU1jrz-GoxUQdvVAX5?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191906.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1zGmDl43lt2fdba9i9psJs_MJSX8JhZL4?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191936.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1arKOK4ZwQK7W1yhZUa3woyXIfUkOavGq?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191144.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/14CXsIL91CSaUqssDrmYwWucMtKo2ukyT?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192033.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1wlMo5-Lgj6hsaT30yQ6uQcwCvTBfb3W5?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190949.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1tBikxNXVtZcchRgL7Q7Wet2Xwn6wuZUo?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191131.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/11MpSk1GMiLVxw1ea2M7Y9lZCt2-l8sxJ?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191112.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1cNS6hS2jvSYeVQom8jPMz9zS4tSxhARo?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191957.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1OmSJ2WCG0EJda7xcuOPCQ-xX9Do5wp58?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018191051.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1n2h9thgx4ABKdm0r78G4bDfMSd-eabxa?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018190956.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/101b_0ZRLRfKzRGHxAk0s2JNPWQ4LbuCu?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193410.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1DKr64Fgh7OKmtyZVgl3EaiOSIZI7byS4?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192038.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1dcZE1Ui7kLgxMubO9OYCKD4viZTLi4KK?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192048.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1bBkYy1XOWE2Tef2U_4Yprq4Az8aRKrkV?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193459.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1ma-bem9QSXlX89EkAJmmYv8rOTecg6NS?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193350.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1YCnr4o3AbIi_JOdcT3KN3ETOTsrEfEYb?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193951.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1qeeCkXqR4H_ql_CCZW26Uv_Z5_099fK0?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018192224.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1AzeZWa6lI5OoI7C-iGBpE6Kk5ZqgPSIl?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193824.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1zieh-HcTYlt4jzV0RtmfSPNNS04fsHmX?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193328.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1eNggblNZ2-SSmbs0SvVp85EFI1BExIRF?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018193429.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1PrskGbshPukj6no_Tz3bWa2vhanfbpI8?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195048.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1Kw4E9He2T7O5Bt9duw7OZo6JXMsFjfD6?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195207.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/109WongSPvcmNLwS5vVCN7feLxVdFJYr6?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194857.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/13pOM9yxFp2wQAwjvet88JVINjcmlZL5k?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195016.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1XFlogz04bCef9V0kvG5kyG4GNIjDXcxU?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195223.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1vIcU9Cz1HTvjFDcojPkRvAsx3bkj3EPh?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195213.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1XA2sxEuHuHqS6uWoGIXR0eOkB6LThH5H?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194850.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1GqDfDXSw3_ljKr8lahOfGfd_MO0OEi1J?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194424.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/12wA_6Mqi7n13Gr7f45J2mLm0qVqNhFYW?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018195234.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/17-OTi_IhDiVmtqRtOL0eNLr2eYPdMt3H?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/John Pierce '81 - John_Pierce_Lecture_20231018194756.jpg : <HttpError 400 when requesting https://www.googleapis.com/drive/v3/files/1SkyLQSYUZbEzz5_75O328-2m4ZRpRuWa?fields=shortcutDetails.targetId&alt=json returned "Invalid field selection shortcutDetails.targetId". Details: "[{'message': 'Invalid field selection shortcutDetails.targetId', 'domain': 'global', 'reason': 'invalidParameter', 'location': 'fields', 'locationType': 'parameter'}]">
+2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - ZOOM0014.WAV : unsupported format
+2022 - 2023 - Event Outline for 22-23 Annual Report : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording.cc.vtt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_RecordingnewChat.txt : unsupported format
+2022 - 2023/Sharad Sagar - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar/Adobe Premiere Pro Auto-Save - S Sagar.prproj : unsupported format
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/Big Idea Competition/DyerCenter_Big_Idea_Competition_ - DyerCenter_Big_Idea_Competition_20241820450104.jpg : Upload failed (401): {
+  "code": 16,
+  "message": "Authentication session is not defined."
+}
+2023-2024/Big Idea Competition/DyerCenter_Big_Idea_Competition_ - DyerCenter_Big_Idea_Competition_20241819362304.jpg : Upload failed (401): {
+  "code": 16,
+  "message": "Authentication session is not defined."
+}
+2023-2024/Big Idea Competition/DyerCenter_Big_Idea_Competition_ - DyerCenter_Big_Idea_Competition_20241819481704.jpg : Upload failed (401): {
+  "code": 16,
+  "message": "Authentication session is not defined."
+}
+2023-2024/Big Idea Competition/DyerCenter_Big_Idea_Competition_ - DyerCenter_Big_Idea_Competition_20241820072604.jpg : Upload failed (401): {
+  "code": 16,
+  "message": "Authentication session is not defined."
+}
+2023-2024/Big Idea Competition/DyerCenter_Big_Idea_Competition_ - DyerCenter_Big_Idea_Competition_20241820074004.jpg : Upload failed (401): {
+  "code": 16,
+  "message": "Authentication session is not defined."
+}
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - '25 Fellows 2nd Year Presentations.prproj : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0017.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'25 Fellows 2nd Year Presentations - ZOOM0016.WAV : unsupported format
+2022 - 2023 (2/3) /Fellows/'26 Fellows 1st Year Presentations - ZOOM0014.WAV : unsupported format
+2022 - 2023 - Event Outline for 22-23 Annual Report : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_Recording.cc.vtt : unsupported format
+2022 - 2023/Unlocking Federal Funding Zoom Recording - GMT20230523-141440_RecordingnewChat.txt : unsupported format
+2022 - 2023/Sharad Sagar - S Sagar.prproj : unsupported format
+2022 - 2023/Sharad Sagar/Adobe Premiere Pro Auto-Save - S Sagar.prproj : unsupported format
+2023-2024/Real Estate Competition - Copy of Foundations of RE  : unsupported format
+2023-2024/Real Estate Competition - GMT20240425-225811_Recording.m4a : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_RecordingnewChat.txt : unsupported format
+2023-2024/Big Idea Competition/Recording - GMT20240418-225511_Recording.cc.vtt : unsupported format
+2023-2024/Open House - Dyer_Center_Meet_And_Greet_ : unsupported format
+2022-2023/Real Estate Recordings - Introduction to Risk and Opportunities in Real Estate.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate - Real Estate Highlight Reel.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate - Real Estate Sizzle Reel.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate - falling-zayner-main-version-03-15-2157.mp3 : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9670.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9672_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9672.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9670_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9671.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9671_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9669.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9667.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9669_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9668_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9667_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9661_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9660.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9660_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9656.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9657_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9658_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9657.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9659_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9652_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9652.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9649_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9647_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9641.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9640_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9640.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9644_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9636_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9636.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9639.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9637.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9635.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9638.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9630_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9630.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9634_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9625.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9629.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9629_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9620.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9622.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9624.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9621.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9621_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9623_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9617.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9616_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9616.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9610_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9612_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9613.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9614_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9614.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9611.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9612.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9610.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9608_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9609.MP4 : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/B-Roll - Copy of C9609_Proxy.mov : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel-2023-06-06_14-18-04.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel-2023-06-06_13-58-14.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel-2023-06-06_12-55-16.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel-2023-06-06_12-15-40.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel-2023-06-06_10-19-58.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel-2023-06-06_09-48-34.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-05_09-23-17.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-05_08-41-35.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-05_08-28-03.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-05_08-12-01.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-05_07-41-36.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-04_19-36-37.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-03_14-43-50.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-03_14-29-02.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-06-03_14-12-23.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_14-06-49.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_13-51-20.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_13-37-32.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_13-23-35.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_13-09-18.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_12-45-15.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_12-28-29.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_12-14-54.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_11-27-46.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_11-13-14.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save - Real Estate Sizzle Reel-2023-05-25_10-57-52.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Adobe Premiere Pro Auto-Save/Adobe Premiere Pro Auto-Save - Real Estate Highlight Reel.prproj : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Rex Ahene - ZOOM0008.WAV : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Rex Ahene/2nd take - DSC_0002.MOV : Upload failed (400): {
+  "code": 3,
+  "message": "Payload must not be empty"
+}
+2022-2023/Real Estate Recordings/Competition/Real Estate/Team Interviews - ZOOM0011.WAV : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Team Interviews - ZOOM0010.WAV : unsupported format
+2022-2023/Real Estate Recordings/Competition/Real Estate/Team Interviews - ZOOM0009.WAV : unsupported format
+2022-2023/Real Estate Recordings/Competition/Pitch Presenters - ZOOM0002.WAV : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment - Untitled.prproj : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment - Fundamentals to Commercial Real Estate Investment.prproj : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment/Adobe Premiere Pro Auto-Save - Untitled.prproj : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment/Adobe Premiere Pro Auto-Save - Fundamentals to Commercial Real Estate Investment.prproj : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment/Adobe Premiere Pro Auto-Save - Untitled-2022-11-10_18-46-51.prproj : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment/Adobe Premiere Pro Auto-Save - Fundamentals to Commercial Real Estate Investment-2022-11-10_18-46-50.prproj : unsupported format
+2022-2023/Real Estate Recordings/Fundamentals to Commercial Real Estate Investment/Adobe Premiere Pro Auto-Save - Untitled-2022-11-10_15-59-26.prproj : unsupported format
+2022-2023/Real Estate Recordings -  : Add to album failed (429): Quota exceeded for quota 'concurrent write request' of service 'photoslibrary.googleapis.com'.

@@ -20,28 +20,13 @@ SCOPES = [
 # Supported extensions & video duration threshold
 IMAGE_EXTS = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.heic', '.dng'}
 VIDEO_EXTS = {'.mp4', '.mov', '.avi', '.mkv','wav'}
-MAX_VIDEO_SECONDS = 10000
-
+MAX_VIDEO_SECONDS = 1800
 
 # Tracking files
 IMPORTED_FILE = 'imported.json'
 SKIPPED_FILE = 'skipped.json'
+MISSED_FILE = 'missedimages.txt'
 
-
-MISSED_FILE      = 'missedimages.txt'
-ALLMISSED_FILE   = 'allmissed.txt'
-
-
-def log_missing(folder, name, reason):
-    with open(MISSED_FILE, 'a', encoding='utf-8') as f:
-        f.write(f"{folder} - {name} : {reason}\n")
-
-def log_allmissed(folder, name, file_id, reason):
-    """Write a detailed skip record to allmissed.txt"""
-    with open(ALLMISSED_FILE, 'a', encoding='utf-8') as f:
-        f.write(f"{folder} - {name} - {file_id} : {reason}\n")
-
-        
 def rename_album(token, album_id, old_title, new_title):
     headers = {
         "Authorization": f"Bearer {token}",
@@ -219,44 +204,41 @@ def add_to_album(token, upload_tokens, album_id):
     raise RuntimeError(f"Add to album failed ({resp.status_code}): {msg}")
 
 
-
 def process_folder(drive_service, token, folder_id, folder_name, imported, skipped):
     print(f"\n📁 Entering folder: {folder_name}")
     items = list_all_items(drive_service, folder_id)
 
     # Log contents
     for itm in items:
-        print_item = itm['name']
-        mime = itm['mimeType']
-        ext = os.path.splitext(print_item)[1].lower()
+        name, mime = itm['name'], itm['mimeType']
+        ext = os.path.splitext(name)[1].lower()
         if mime == 'application/vnd.google-apps.folder':
-            print(f"  [Folder] {print_item}")
+            print(f"  [Folder] {name}")
         elif mime.startswith('image/') or ext in IMAGE_EXTS:
-            print(f"  [Image]  {print_item}")
+            print(f"  [Image]  {name}")
         elif mime.startswith('video/') or ext in VIDEO_EXTS:
-            print(f"  [Video]  {print_item}")
+            print(f"  [Video]  {name}")
         else:
-            print(f"  [Skip]   {print_item} (unsupported)")
-            log_missing(folder_name, print_item, 'unsupported format')
-            log_allmissed(folder_name, print_item, itm['id'], 'unsupported format')
+            print(f"  [Skip]   {name} (unsupported)")
+            log_missing(folder_name, name, 'unsupported format')
 
     upload_tokens = []
 
     for itm in items:
+        if itm['mimeType'] == 'application/vnd.google-apps.folder':
+            process_folder(
+                drive_service, token,
+                itm['id'], f"{folder_name}/{itm['name']}",
+                imported, skipped
+            )
+            continue
+
         file_id = itm['id']
         name = itm['name']
         mime = itm['mimeType']
         ext = os.path.splitext(name)[1].lower()
         is_image = mime.startswith('image/') or ext in IMAGE_EXTS
         is_video = mime.startswith('video/') or ext in VIDEO_EXTS
-
-        if itm['mimeType'] == 'application/vnd.google-apps.folder':
-            process_folder(
-                drive_service, token,
-                file_id, f"{folder_name}/{name}",
-                imported, skipped
-            )
-            continue
 
         if not (is_image or is_video):
             continue
@@ -267,6 +249,7 @@ def process_folder(drive_service, token, folder_id, folder_name, imported, skipp
             print(f"  ↳ Already skipped: {name} ({skipped[file_id]})")
             continue
 
+        # Video-length check by metadata (cast duration to int)
         if is_video:
             dur_raw = itm.get('videoMediaMetadata', {}).get('durationMillis')
             try:
@@ -278,7 +261,6 @@ def process_folder(drive_service, token, folder_id, folder_name, imported, skipp
                 reason = f"video too long ({dur_ms/1000:.1f}s)"
                 print(f"    ⚠️ Skipped {name}: {reason}")
                 log_missing(folder_name, name, reason)
-                log_allmissed(folder_name, name, file_id, reason)
                 skipped[file_id] = reason
                 save_json(SKIPPED_FILE, skipped)
                 continue
@@ -291,11 +273,9 @@ def process_folder(drive_service, token, folder_id, folder_name, imported, skipp
             save_json(IMPORTED_FILE, list(imported))
             print(f"  ✅ Uploaded {name}")
         except Exception as e:
-            err = str(e)
-            print(f"  ❌ Upload failed for {name}: {err}")
-            log_missing(folder_name, name, err)
-            log_allmissed(folder_name, name, file_id, err)
-            skipped[file_id] = err
+            print(f"  ❌ Upload failed for {name}: {e}")
+            log_missing(folder_name, name, str(e))
+            skipped[file_id] = str(e)
             save_json(SKIPPED_FILE, skipped)
 
     if upload_tokens:
@@ -377,38 +357,16 @@ def main():
     creds = authenticate()
     drive_service = build('drive', 'v3', credentials=creds)
     token = creds.token
-    folder_id = '1DXOaxaJ_uN5VwKiHMyARBMef0_vs6yg7'
-    # call the helper you wrote:
-    export_and_clear_imported_for_folder(drive_service, folder_id)
-
-    # print it (or save it to a file)
-    print("done")
-   
     
-    
-    imported = set(load_json(IMPORTED_FILE, []))
-    skipped = load_json(SKIPPED_FILE, {})
-
-    root_name = '_Pictures and Video'
-    resp = drive_service.files().list(
-        q=(f"mimeType='application/vnd.google-apps.folder' and"
-           f" name='{root_name}' and 'root' in parents"),
-        fields="files(id,name)"
-    ).execute()
-    folders = resp.get('files', [])
-    if not folders:
-        print(f"Root folder '{root_name}' not found.")
-        return
-    root_id = folders[0]['id']
-
-    children = drive_service.files().list(
-        q=f"mimeType='application/vnd.google-apps.folder' and '{root_id}' in parents",
-        fields="files(id,name)"
-    ).execute().get('files', [])
-
-    for f in children:
-        process_folder(drive_service, token, f['id'], f['name'], imported, skipped)
-
- 
+    print("\n🔍 Checking for albums to rename...")
+    albums = list_all_albums(token)
+    for album in albums:
+        title = album.get('title', '')
+        album_id = album.get('id')
+        if '/' in title:
+            new_title = title.split('/')[-1].strip()
+            if new_title and new_title != title:
+                rename_album(token, album_id, title, new_title)
+                time.sleep(2)
 if __name__ == '__main__':
     main()
