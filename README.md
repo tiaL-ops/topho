@@ -1,13 +1,14 @@
 Hi!
-
+i personally used avirutal enviornemt in python for that you can
+python -m venv .venv
+and actiate it by source .venv/bin/activate
 To reinstall all requirement :
 pip install -r requirements.txt
 
 
 
-name of folder:
-_Pictures and Video
-child(1) -- > 2024-2025 ( folder)
-child(2) -- >
-if image just import and add to the album: child(2)
-if dolder , jsut create another album  child(3) --> and add all picture in taht
+Welcome to topho, a tool to help you move 
+First make sure you have your own cedntials.json, for that create a google cloud account, 
+create the ap, enable : google drive, google phots, and download it. you should be able to dowlo a client secret, rename it and put it in root folder name crednetials. json
+
+

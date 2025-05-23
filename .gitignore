@@ -4,3 +4,6 @@ credentials.json
 __pycache__/
 *.pyc
 token.json
+allmissed.txt
+allmissed.json
+allmissed/

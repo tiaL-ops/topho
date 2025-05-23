@@ -1,414 +1,45 @@
-import os
-import io
-import json
-import requests
-import time 
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
-
-# Scopes for Drive (read-only) and Photos (append-only)
-SCOPES = [
-    'https://www.googleapis.com/auth/drive.readonly',
-    'https://www.googleapis.com/auth/photoslibrary.edit.appcreateddata',
-    'https://www.googleapis.com/auth/photoslibrary.appendonly',
-    'https://www.googleapis.com/auth/photoslibrary.readonly.appcreateddata'
-]
-
-
-# Supported extensions & video duration threshold
-IMAGE_EXTS = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.heic', '.dng'}
-VIDEO_EXTS = {'.mp4', '.mov', '.avi', '.mkv','wav'}
-MAX_VIDEO_SECONDS = 10000
-
-
-# Tracking files
-IMPORTED_FILE = 'imported.json'
-SKIPPED_FILE = 'skipped.json'
-
-
-MISSED_FILE      = 'missedimages.txt'
-ALLMISSED_FILE   = 'allmissed.txt'
-
-
-def log_missing(folder, name, reason):
-    with open(MISSED_FILE, 'a', encoding='utf-8') as f:
-        f.write(f"{folder} - {name} : {reason}\n")
-
-def log_allmissed(folder, name, file_id, reason):
-    """Write a detailed skip record to allmissed.txt"""
-    with open(ALLMISSED_FILE, 'a', encoding='utf-8') as f:
-        f.write(f"{folder} - {name} - {file_id} : {reason}\n")
-
-        
-def rename_album(token, album_id, old_title, new_title):
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json"
-    }
-    body = {
-        "title": new_title  # <– No nested 'album'
-    }
-    resp = requests.patch(
-        f"https://photoslibrary.googleapis.com/v1/albums/{album_id}?updateMask=title",
-        headers=headers,
-        json=body
-    )
-    if resp.status_code == 200:
-        print(f"✏️ Renamed album: '{old_title}' → '{new_title}'")
-    else:
-        print(f"❌ Failed to rename '{old_title}': {resp.text}")
-
-def list_all_albums(token):
-    headers = {"Authorization": f"Bearer {token}"}
-    albums = []
-    next_token = None
-
-    while True:
-        resp = requests.get(
-            "https://photoslibrary.googleapis.com/v1/albums",
-            headers=headers,
-            params={"pageSize": 50, "pageToken": next_token}
-        )
-        if resp.status_code != 200:
-            print(f"⚠️ Failed to list albums: {resp.text}")
-            break
-
-        data = resp.json()
-        albums.extend(data.get("albums", []))
-        next_token = data.get("nextPageToken")
-        if not next_token:
-            break
-
-    return albums
-
-def authenticate():
-    creds = None
-    if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-    else:
-        flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
-        creds = flow.run_local_server(port=0)
-        with open('token.json', 'w') as token:
-            token.write(creds.to_json())
-    return creds
-
-
-def load_json(path, default):
-    if os.path.exists(path):
-        with open(path, 'r') as f:
-            return json.load(f)
-    return default
-
-
-def save_json(path, data):
-    with open(path, 'w') as f:
-        json.dump(data, f, indent=2)
-
-
-def log_missing(folder, name, reason):
-    with open(MISSED_FILE, 'a', encoding='utf-8') as f:
-        f.write(f"{folder} - {name} : {reason}\n")
-
-
-def list_all_items(drive_service, folder_id):
-    query = f"'{folder_id}' in parents"
-    items, page_token = [], None
-    while True:
-        resp = drive_service.files().list(
-            q=query,
-            pageSize=1000,
-            fields="nextPageToken, files(id,name,mimeType,videoMediaMetadata(durationMillis))",
-            pageToken=page_token
-        ).execute()
-        items.extend(resp.get('files', []))
-        page_token = resp.get('nextPageToken')
-        if not page_token:
-            break
-    return items
-
-
-def download_file(drive_service, file_id):
-    request = drive_service.files().get_media(fileId=file_id)
-    data = io.BytesIO()
-    downloader = MediaIoBaseDownload(data, request)
-    done = False
-    while not done:
-        _, done = downloader.next_chunk()
-    return data.getvalue()
-
-
-def upload_to_photos(token, file_bytes, file_name):
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-type": "application/octet-stream",
-        "X-Goog-Upload-File-Name": file_name,
-        "X-Goog-Upload-Protocol": "raw",
-    }
-    resp = requests.post(
-        "https://photoslibrary.googleapis.com/v1/uploads",
-        headers=headers,
-        data=file_bytes
-    )
-    if resp.status_code == 200:
-        return resp.text
-    # extract error message if possible
-    try:
-        err = resp.json().get('error', {})
-        msg = err.get('message', resp.text)
-    except ValueError:
-        msg = resp.text
-    raise RuntimeError(f"Upload failed ({resp.status_code}): {msg}")
-
-
-def create_album(token, title):
-    headers = {"Authorization": f"Bearer {token}"}
-    resp = requests.post(
-        "https://photoslibrary.googleapis.com/v1/albums",
-        headers=headers,
-        json={"album": {"title": title}}
-    )
-    return resp.json().get('id') if resp.status_code == 200 else None
-
-
-def get_album_id(token, title):
-    """Return existing app-created album ID by title, or None."""
-    headers = {"Authorization": f"Bearer {token}"}
-    next_page = None
-    while True:
-        params = {"pageSize": 50}
-        if next_page:
-            params["pageToken"] = next_page
-        resp = requests.get(
-            "https://photoslibrary.googleapis.com/v1/albums",
-            headers=headers,
-            params=params
-        )
-        if resp.status_code != 200:
-            return None
-        data = resp.json()
-        for alb in data.get("albums", []):
-            if alb.get("title") == title:
-                return alb.get("id")
-        next_page = data.get("nextPageToken")
-        if not next_page:
-            break
-    return None
-
-
-def add_to_album(token, upload_tokens, album_id):
-    headers = {"Authorization": f"Bearer {token}"}
-    body = {
-        "albumId": album_id,
-        "newMediaItems": [{"simpleMediaItem": {"uploadToken": t}} for t in upload_tokens]
-    }
-    resp = requests.post(
-        "https://photoslibrary.googleapis.com/v1/mediaItems:batchCreate",
-        headers=headers,
-        json=body
-    )
-    if resp.status_code == 200:
-        return True
-    # extract error message
-    try:
-        err = resp.json().get('error', {})
-        msg = err.get('message', resp.text)
-    except ValueError:
-        msg = resp.text
-    raise RuntimeError(f"Add to album failed ({resp.status_code}): {msg}")
-
-
-
-def process_folder(drive_service, token, folder_id, folder_name, imported, skipped):
-    print(f"\n📁 Entering folder: {folder_name}")
-    items = list_all_items(drive_service, folder_id)
-
-    # Log contents
-    for itm in items:
-        print_item = itm['name']
-        mime = itm['mimeType']
-        ext = os.path.splitext(print_item)[1].lower()
-        if mime == 'application/vnd.google-apps.folder':
-            print(f"  [Folder] {print_item}")
-        elif mime.startswith('image/') or ext in IMAGE_EXTS:
-            print(f"  [Image]  {print_item}")
-        elif mime.startswith('video/') or ext in VIDEO_EXTS:
-            print(f"  [Video]  {print_item}")
-        else:
-            print(f"  [Skip]   {print_item} (unsupported)")
-            log_missing(folder_name, print_item, 'unsupported format')
-            log_allmissed(folder_name, print_item, itm['id'], 'unsupported format')
-
-    upload_tokens = []
-
-    for itm in items:
-        file_id = itm['id']
-        name = itm['name']
-        mime = itm['mimeType']
-        ext = os.path.splitext(name)[1].lower()
-        is_image = mime.startswith('image/') or ext in IMAGE_EXTS
-        is_video = mime.startswith('video/') or ext in VIDEO_EXTS
-
-        if itm['mimeType'] == 'application/vnd.google-apps.folder':
-            process_folder(
-                drive_service, token,
-                file_id, f"{folder_name}/{name}",
-                imported, skipped
-            )
-            continue
-
-        if not (is_image or is_video):
-            continue
-        if file_id in imported:
-            print(f"  ↳ Already imported: {name}")
-            continue
-        if file_id in skipped:
-            print(f"  ↳ Already skipped: {name} ({skipped[file_id]})")
-            continue
-
-        if is_video:
-            dur_raw = itm.get('videoMediaMetadata', {}).get('durationMillis')
-            try:
-                dur_ms = int(dur_raw) if dur_raw is not None else None
-            except (ValueError, TypeError):
-                dur_ms = None
-
-            if dur_ms and (dur_ms / 1000) > MAX_VIDEO_SECONDS:
-                reason = f"video too long ({dur_ms/1000:.1f}s)"
-                print(f"    ⚠️ Skipped {name}: {reason}")
-                log_missing(folder_name, name, reason)
-                log_allmissed(folder_name, name, file_id, reason)
-                skipped[file_id] = reason
-                save_json(SKIPPED_FILE, skipped)
-                continue
-
-        try:
-            data = download_file(drive_service, file_id)
-            token_str = upload_to_photos(token, data, name)
-            upload_tokens.append(token_str)
-            imported.add(file_id)
-            save_json(IMPORTED_FILE, list(imported))
-            print(f"  ✅ Uploaded {name}")
-        except Exception as e:
-            err = str(e)
-            print(f"  ❌ Upload failed for {name}: {err}")
-            log_missing(folder_name, name, err)
-            log_allmissed(folder_name, name, file_id, err)
-            skipped[file_id] = err
-            save_json(SKIPPED_FILE, skipped)
-
-    if upload_tokens:
-        album_id = get_album_id(token, folder_name) or create_album(token, folder_name)
-        if not album_id:
-            print(f"⚠️ Could not create or find album '{folder_name}'")
-            log_missing(folder_name, '', 'album creation/fetch failed')
-            return
-        chunk_size = 50
-        for i in range(0, len(upload_tokens), chunk_size):
-            batch = upload_tokens[i:i+chunk_size]
-            try:
-                add_to_album(token, batch, album_id)
-                print(f"  🎉 Added {len(upload_tokens)} items to album '{folder_name}'")
-            except Exception as e:
-                print(f"  ❌ Failed to add items to album '{folder_name}': {e}")
-                log_missing(folder_name, '', str(e))
-    else:
-        # don't create an album if there's nothing to upload
-        print(f"  - No valid media uploaded; skipping album creation.")
-def get_folder_items_id_json(drive_service, folder_id):
-    """
-    Returns a JSON string mapping each file’s name to its Drive ID
-    for all non‐folder items in the given folder.
-    """
-    items = list_all_items(drive_service, folder_id)
-    mapping = {
-        itm['name']: itm['id']
-        for itm in items
-        if itm['mimeType'] != 'application/vnd.google-apps.folder'
-    }
-    return json.dumps(mapping, indent=2)
-def export_and_clear_imported_for_folder(drive_service, folder_id):
-    """
-    1) Loads imported.json (either a list of IDs or a dict of {id:info})
-    2) Converts it to a dict if necessary, saving it back
-    3) Lists that Drive folder
-    4) Builds a {fileName: fileId} map for only those IDs in imported.json
-    5) Deletes those IDs from imported.json on disk
-    6) Returns the mapping as pretty JSON
-    """
-    # 1) load whatever is in imported.json
-    imported_raw = load_json(IMPORTED_FILE, None)
-    if imported_raw is None:
-        imported = {}
-    elif isinstance(imported_raw, list):
-        # convert old list-of-IDs into a dict
-        imported = {fid: {} for fid in imported_raw}
-        save_json(IMPORTED_FILE, imported)
-    elif isinstance(imported_raw, dict):
-        imported = imported_raw
-    else:
-        raise RuntimeError(f"{IMPORTED_FILE} has unexpected format")
-
-    # 2) list all items in the folder
-    items = list_all_items(drive_service, folder_id)
-
-    # 3) build mapping for those IDs that were imported
-    mapping = {}
-    to_remove = []
-    for itm in items:
-        fid = itm['id']
-        if itm['mimeType'] != 'application/vnd.google-apps.folder' and fid in imported:
-            mapping[itm['name']] = fid
-            to_remove.append(fid)
-
-    # 4) remove them from imported and save back
-    for fid in to_remove:
-        imported.pop(fid, None)
-    save_json(IMPORTED_FILE, imported)
-
-    # 5) return the JSON block
-    return json.dumps(mapping, indent=2)
-
-
+import argparse
+from topho import run
 
 
 def main():
-    creds = authenticate()
-    drive_service = build('drive', 'v3', credentials=creds)
-    token = creds.token
-    folder_id = '1DXOaxaJ_uN5VwKiHMyARBMef0_vs6yg7'
-    # call the helper you wrote:
-    export_and_clear_imported_for_folder(drive_service, folder_id)
+    parser = argparse.ArgumentParser(
+        description="Upload Google Drive media to Google Photos"
+    )
+    parser.add_argument(
+        "--root-folder", "-r",
+        help="Name of the root Drive folder to process"
+    )
+    parser.add_argument(
+        "--max-video-seconds", "-m",
+        type=int,
+        default=10000,
+        help="Maximum allowed video duration in seconds (default: 10000)"
+    )
+    parser.add_argument(
+        "--credentials", "-c",
+        default="credentials.json",
+        help="Path to Google OAuth client secrets file (default: credentials.json)"
+    )
+    parser.add_argument(
+        "--token", "-t",
+        default="token.json",
+        help="Path to store/retrieve OAuth token (default: token.json)"
+    )
 
-    # print it (or save it to a file)
-    print("done")
-   
-    
-    
-    imported = set(load_json(IMPORTED_FILE, []))
-    skipped = load_json(SKIPPED_FILE, {})
+    args = parser.parse_args()
 
-    root_name = '_Pictures and Video'
-    resp = drive_service.files().list(
-        q=(f"mimeType='application/vnd.google-apps.folder' and"
-           f" name='{root_name}' and 'root' in parents"),
-        fields="files(id,name)"
-    ).execute()
-    folders = resp.get('files', [])
-    if not folders:
-        print(f"Root folder '{root_name}' not found.")
-        return
-    root_id = folders[0]['id']
+    # Prompt interactively if no root folder provided
+    if not args.root_folder:
+        args.root_folder = input("Enter the name of the root Drive folder to process: ").strip()
 
-    children = drive_service.files().list(
-        q=f"mimeType='application/vnd.google-apps.folder' and '{root_id}' in parents",
-        fields="files(id,name)"
-    ).execute().get('files', [])
+    run(
+        root_folder_name=args.root_folder,
+        max_video_seconds=args.max_video_seconds,
+        credentials_path=args.credentials,
+        token_path=args.token
+    )
 
-    for f in children:
-        process_folder(drive_service, token, f['id'], f['name'], imported, skipped)
 
- 
 if __name__ == '__main__':
     main()
