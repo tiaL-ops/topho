@@ -1,27 +1,31 @@
 
-#  topho – Upload Google Drive Photos to Google Photos
+# 📸 topho – Upload Google Drive Photos to Google Photos
 
-Welcome to **topho**! This tool helps you transfer media from your **Google Drive** to **Google Photos**.
+Welcome to **topho**! This tool helps you transfer media from **Google Drive** to **Google Photos**, organizing everything into albums by folder.
 
 ---
 
-## 🚀 Setup Instructions
+## 📥 1. Clone This Repo
 
-### 1. Create a Virtual Environment (Recommended)
+First, clone the repository:
 
-Using a virtual environment keeps dependencies isolated:
+```bash
+git clone https://github.com/tiaL-ops/topho.git
+
+```
+
+---
+
+## 🚀 2. Set Up Your Environment
+
+### Create a Virtual Environment (Recommended)
 
 ```bash
 python -m venv .venv
-```
-
-Activate it:
-
-```bash
 source .venv/bin/activate
 ```
 
-### 2. Install Required Packages
+### Install Required Packages
 
 ```bash
 pip install -r requirements.txt
@@ -29,11 +33,9 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Google API Setup
+## 🔐 3. Google API Credentials Setup
 
-To use this tool, you need to authenticate with your own **Google Cloud credentials**:
-
-### Steps:
+To authenticate with Google:
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/).
 2. Create a new **project**.
@@ -41,25 +43,23 @@ To use this tool, you need to authenticate with your own **Google Cloud credenti
 
    * **Google Drive API**
    * **Google Photos Library API**
-4. Go to **Credentials** and create an **OAuth 2.0 Client ID**:
+4. Under **Credentials**, create an **OAuth 2.0 Client ID**:
 
-   * Application type: **Desktop app**
-   * Download the `client_secret.json`
-5. Rename it to `credentials.json` and place it in the project’s root folder.
+   * Application type: **Desktop App**
+   * Download the file and rename it to `credentials.json`
+5. Place `credentials.json` in the root of the project.
 
 ---
 
-## 📂 Using the Script
-
-Once everything is set up:
+## ▶️ 4. Run the Tool
 
 ```bash
 python main.py
 ```
 
-You'll be prompted to enter the name of the root folder from your Google Drive that you want to process.
+You'll be prompted to enter the name of your Google Drive folder.
 
-Optional command-line flags:
+### Optional Flags
 
 ```bash
 python main.py \
@@ -71,10 +71,10 @@ python main.py \
 
 ---
 
-## 🧼 Notes
+## 📄 Notes
 
-* Media will be organized into albums in Google Photos by folder name.
-* Only media with supported formats (e.g., `.jpg`, `.mp4`) will be uploaded.
-* Videos longer than your specified limit will be skipped.
+* Only supported media files (e.g. `.jpg`, `.png`, `.mp4`) will be uploaded.
+* Videos over the specified duration will be skipped.
+* Media is uploaded to albums matching your Drive folder names.
 
 
